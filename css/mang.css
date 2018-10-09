@@ -1,0 +1,17 @@
+.header {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    
+    
+}
+
+.square {
+    background:#afa;
+    display:inline-block;
+    border:1px solid #fff;
+    text-align:center;
+    position: absolute;
+    cursor: pointer;
+}
+

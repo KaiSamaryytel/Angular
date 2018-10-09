@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no">
+   
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Angulari õpetus</title>
+    <link rel="stylesheet" href="css/naide.css">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/black.png"/>
+    
+    <!-- Angular -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-animate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular-route.min.js"></script>
+    <script src="js/naide.js"></script>
+    
+  </head>
+  <body>
+    <img src="img/header.jpg" class="img-rounded" alt="space" width="100%">
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand">Angulari õpetus</a>
+                <img src="img/black.png" width="8%">
+    <!-- navigatsioon -->
+        </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Avaleht</a></li>
+                <li><a href="todo.html">Todo</a></li>
+                <li><a href="materjal.html">Materjalid</a></li>
+                <li class="active"><a href="naide.html">Näited</a></li>
+                <li><a href="mang.html">Mäng</a></li>
+                <li><a href="tagasiside.html">Tagasiside</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class= "text-center">
+    <!-- sisu 1 -->
+    <div class="example">
+        <div ng-app="planetApp">
+            <script type="text/ng-template" id="atmosphere.html">
+          <h2 class="exa">{{planet.name}}</h2>
+          <p class="exa">Kood: <a href="{{planet.carbondioxide}}">codepen</a></p>
+          <p class="exa">Pilt: <img src="{{planet.nitrogen}}" width="20%"></p>
+          <p class="exa">Selgitus: {{planet.oxygen}}</p>
+        </script>
+            <ul class="exa">
+                <li class="exa"><a href="#!/mercury" class="exa">Näide 1</a></li>
+                <li class="exa"><a href="#!/venus" class="exa">Näide 2</a></li>
+                <li class="exa"><a href="#!/earth" class="exa">Näide 3</a></li>
+                <li class="exa"><a href="#!/mars" class="exa">Näide 4</a></li>
+                <li class="exa"><a href="#!/jupiter" class="exa">Näide 5</a></li>
+            </ul>
+            <div class="planet-container">
+                <div class="planet-view" ng-view></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    
+    
+   <!-- jalus -->
+    <footer>
+        <div class="conteiner">
+            <div class="text-center">
+                <p class="text-muted"> Kai &copy; 2018<p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/naide.js"></script>
+    
+    
+  </body>
+</html>

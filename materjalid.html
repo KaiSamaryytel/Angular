@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   
+    <title>Angulari õpetus</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="img/black.png"/>
+    
+    <!-- Angular -->
+    <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    
+
+  </head>
+  <body>
+    <img src="img/header.jpg" class="img-rounded" alt="space" width="100%">
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand">Angulari õpetus</a>
+                <img src="img/black.png" width="8%">
+    <!-- navigatsioon -->
+        </div>
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Avaleht</a></li>
+                <li><a href="todo.html">Todo</a></li>
+                <li class="active"><a href="materjal.html">Materjalid</a></li>
+                <li><a href="naide.html">Näited</a></li>
+                <li><a href="mang.html">Mäng</a></li>
+                <li><a href="tagasiside.html">Tagasiside</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- sisu 1 -->
+    <div class="container">
+  <h2 class="page-header text-center">Materjalid AngularJS jaoks</h2>
+  
+    <div ng-app="myApp" ng-controller="namesCtrl">
+
+        <table class="table">
+            <tr ng-repeat="x in names">
+                <td class="warning"><a href="{{ x.resource }}" target="_blank">{{ x.resource }}</a></td>
+                <td class="active">{{ x.info }}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+   <!-- jalus -->
+    <footer>
+        <div class="conteiner">
+            <div class="text-center">
+                <p class="text-muted"> Kai &copy; 2018<p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/materjalid.js"></script>
+    
+  </body>
+</html>
